@@ -20,21 +20,43 @@ $(window).scroll(function(event){
     }
 
     var homeBgColor;
-    if (scrollTop < 400) {
-        homeBgColor = "rgba(0, 0, 0, 1.0)";
-    } else if (scrollTop < 2300) {
-        homeBgColor = "rgba(78, 196, 209, 1.0)";
-    } else if (scrollTop < 5900) {
-        homeBgColor = "rgba(255, 255, 255, 1.0)";
-    } else if (scrollTop < 8800) {
-        homeBgColor = "rgba(245, 201, 35, 1.0)";
-    } else if (scrollTop < 9700) {
-        homeBgColor = "rgba(255, 255, 255, 1.0)";
-    } else if (scrollTop < 13100) {
-        homeBgColor = "rgba(243, 114, 88, 1.0)";
-    } else {
-        homeBgColor = "rgba(255, 255, 255, 1.0)";
+    // When width is LESS than 780 px
+    if ($( window ).width() < 780) {
+        if (scrollTop < 400) {
+            homeBgColor = "rgba(0, 0, 0, 1.0)";
+        } else if (scrollTop < 2300) {
+            homeBgColor = "rgba(78, 196, 209, 1.0)";
+        } else if (scrollTop < 5900) {
+            homeBgColor = "rgba(255, 255, 255, 1.0)";
+        } else if (scrollTop < 8800) {
+            homeBgColor = "rgba(245, 201, 35, 1.0)";
+        } else if (scrollTop < 9700) {
+            homeBgColor = "rgba(255, 255, 255, 1.0)";
+        } else if (scrollTop < 13100) {
+            homeBgColor = "rgba(243, 114, 88, 1.0)";
+        } else {
+            homeBgColor = "rgba(255, 255, 255, 1.0)";
+        }
     }
+    // When width is LARGER than 780 px
+    else {
+        if (scrollTop < 400) {
+            homeBgColor = "rgba(0, 0, 0, 1.0)";
+        } else if (scrollTop < 2300) {
+            homeBgColor = "rgba(78, 196, 209, 1.0)";
+        } else if (scrollTop < 5900) {
+            homeBgColor = "rgba(255, 255, 255, 1.0)";
+        } else if (scrollTop < 8800) {
+            homeBgColor = "rgba(245, 201, 35, 1.0)";
+        } else if (scrollTop < 9700) {
+            homeBgColor = "rgba(255, 255, 255, 1.0)";
+        } else if (scrollTop < 13100) {
+            homeBgColor = "rgba(243, 114, 88, 1.0)";
+        } else {
+            homeBgColor = "rgba(255, 255, 255, 1.0)";
+        }
+    }
+
     $('#home-body').css('background-color', homeBgColor);
     $('#home-header-container').css('background-color', homeBgColor);
     $('#typewriteText').css('background-color', homeBgColor);
@@ -44,6 +66,8 @@ $(window).scroll(function(event){
     } else {
         $('#scroll-to-top').css("display", "none");
     }
+
+    console.log(scrollTop);
 });
 
 // CaseStudy Scroll Animation ///
