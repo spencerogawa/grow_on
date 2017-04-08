@@ -678,6 +678,20 @@ header{
 
 
 /*-----------------ONLINE SHOP------------------*/
+#onlineshop-body{
+    background-color: white;
+}
+
+#onlineshop-body h1{
+    color: #d9d9d9;
+    word-spacing: 0.2em;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    margin: 0;
+    font-weight: 400;
+}
+
+
 #onlineshop-wrapper{
     width: 70%;
     margin: auto;
@@ -697,10 +711,52 @@ header{
 #onlineshop-header i{
    float: right;
 }
-.juice-col{
-    width: 49.5%;
-    display: inline-block;
+#juice-body{
+    padding-bottom: 100px;
 }
+.juice-col{
+    width: 47%;
+    display: inline-block;
+    padding: 10% 1% 0 1%;
+}
+
+.online-juice-img{
+    width:49%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.online-juice-text{
+    width:49%;
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.online-juice-text p{
+    font-size: 0.9em;
+}
+
+.add-cart-btn{
+    border: 1px solid #f27258;
+    transition: .3s;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    width: 80%;
+}
+
+.add-cart-btn:hover{
+    background-color:#f27258;
+    border: 1px solid rgba(242, 114, 88, 0);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 /*-----------------ABOUT------------------*/
 #about-body{
 	background-color: white;
@@ -1854,7 +1910,22 @@ body.open:after {
 		width: 100%;
 		display: block;
 	}
-}
+    .juice-col {
+        width: 100%;
+        display: block;
+        padding: 10% 0% 0 0%;
+    }
+
+    .add-cart-btn {
+         width: 100%;
+    }
+    #onlineshop-body h1{
+        font-size: 2em;
+    }
+    #onlineshop-header {
+        padding-top: 60px;
+    }
+
 }
 
 
