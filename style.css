@@ -674,6 +674,33 @@ header{
 
 
 
+
+
+
+/*-----------------ONLINE SHOP------------------*/
+#onlineshop-wrapper{
+    width: 70%;
+    margin: auto;
+}
+
+#onlineshop-header{
+    padding-top: 100px;
+    overflow: hidden;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+#onlineshop-header p{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+#onlineshop-header i{
+   float: right;
+}
+.juice-col{
+    width: 49.5%;
+    display: inline-block;
+}
 /*-----------------ABOUT------------------*/
 #about-body{
 	background-color: white;
