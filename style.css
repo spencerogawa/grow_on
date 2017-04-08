@@ -524,6 +524,7 @@ header{
 }
 
 #stories-top-image{
+	text-align: center;
 	margin-bottom: 100px;
 }
 
@@ -546,7 +547,7 @@ header{
 
 #EandT-profile-img{
 	background-image: url('images/stories_E&T.png');
-	background-position: center; 
+	background-position: top;
 	background-repeat:no-repeat;
 	/*background-size: cover;*/
 	-webkit-background-size: cover;
@@ -1582,7 +1583,6 @@ body.open:after {
     width: 80%;
 }
 
-
 @media screen and (max-width:780px){
 	p{
 		font-size: 1em;
@@ -1604,11 +1604,11 @@ body.open:after {
     	padding-bottom: 15px;
 	}
 
-	.nav-down{
+/*	.nav-down{
 		height: 40px;
-	}
+	}*/
 	.desktop-menu{
-		visibility: hidden;
+		display: none;
 	}
 
 	.mobile-nav{

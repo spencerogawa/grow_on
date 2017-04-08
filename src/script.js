@@ -38,6 +38,12 @@ $(window).scroll(function(event){
     $('#home-body').css('background-color', homeBgColor);
     $('#home-header-container').css('background-color', homeBgColor);
     $('#typewriteText').css('background-color', homeBgColor);
+
+    if (scrollTop > 40 && $( window ).width() < 780) {
+        $('#scroll-to-top').css("display", "initial");
+    } else {
+        $('#scroll-to-top').css("display", "none");
+    }
 });
 
 // CaseStudy Scroll Animation ///
@@ -94,3 +100,8 @@ function hasScrolled() {
 
 /********************** Mobile Menu ***********************/
 
+/* Scroll up to top page */
+$("#scroll-to-top").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
