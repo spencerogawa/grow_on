@@ -97,7 +97,6 @@ body{
 	margin: auto;
 	background: rgba(0, 0, 0, 1.0);
 	transition: background 1s ease;
-
 }
 
 
@@ -166,7 +165,8 @@ nav img{
 }
 
 .mobile-nav{
-	visibility: hidden;
+	/*visibility: hidden;*/
+	display: none;
 }
 
 header{
@@ -1313,7 +1313,7 @@ footer a{
 
 /*NAV MENU*/
 body.open, body:after {
-  overflow: hidden
+  overflow: hidden;
 }
 .b-nav, body:after {
   position: absolute;
@@ -1431,11 +1431,12 @@ body.open:after {
   height: 100vh;
 }
 .b-nav:not(.open) {
-  visibility: hidden;
-  animation-duration: 0.4s;
-  animation-fill-mode: backwards;
-  -webkit-animation-name: slideOutLeft;
-  animation-name: slideOutLeft
+	display: none;
+    /*visibility: hidden;*/
+    animation-duration: 0.4s;
+    animation-fill-mode: backwards;
+    -webkit-animation-name: slideOutLeft;
+    animation-name: slideOutLeft
 }
 .b-nav.open li {
   padding-left: 30px;
@@ -1555,7 +1556,7 @@ body.open:after {
 }
 
 
-@media screen and (max-width:640px){
+@media screen and (max-width:780px){
 	p{
 		font-size: 1em;
 	}
@@ -1584,7 +1585,8 @@ body.open:after {
 	}
 
 	.mobile-nav{
-	visibility: visible;
+	/*visibility: visible;*/
+		display: initial;
 	}
 /*--FOOTER*/
 	footer p {
