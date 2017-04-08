@@ -229,9 +229,10 @@ header{
 }
 
 .main-container{
-	max-width: 60vw;
+	width: 60vw;
 	margin: auto;
 	overflow: hidden;
+
 }
 
 .col-1{
@@ -1578,7 +1579,7 @@ body.open:after {
 	.nav-down{
 		height: 40px;
 	}
-	.desktiop-menu{
+	.desktop-menu{
 		visibility: hidden;
 	}
 

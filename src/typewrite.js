@@ -86,7 +86,7 @@
                 clearInterval(done);
                 $(settings.mainel).trigger('typewriteComplete');
                 $('#typewriteText').empty();
-                var imgTag = '<img src="images/logo_animation_top_v2.gif" width="100%">';
+                var imgTag = '<img src="./images/logo_animation_top_v2.gif" width="100%">';
                 $('#typewriteText').delay(300).queue(function (f) {
                     $(this).html(imgTag);
                     $('div.arrow-white').delay(3000).queue(function (f) {
