@@ -95,11 +95,11 @@
                     });
                     f();
                 });
-                setTimeout(customType, 13000);
+                setTimeout(customType, 12200);
             } else {
                 $('div.arrow-white').css("visibility", "hidden");
             }
-        }, 100);
+        }, 500);
 
         // adds a wrapper span around given index of characters to mimick selecting the text
         function select(action, callback){

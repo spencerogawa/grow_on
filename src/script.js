@@ -62,7 +62,7 @@ $(window).scroll(function(event){
     $('#typewriteText').css('background-color', homeBgColor);
 
     if (scrollTop > 40 && $( window ).width() < 780) {
-        $('#scroll-to-top').css("display", "initial");
+        $('#scroll-to-top').css("display", "inline");
     } else {
         $('#scroll-to-top').css("display", "none");
     }
@@ -101,6 +101,20 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+
+
+// HOME Scroll Down ///
+$("#home-scroll-down").click(function() {
+    $("html, body").animate({ scrollTop: 860 }, "slow");
+    return false;
+});
+
+
+// CASE STUDY Home Scroll Down ///
+$("#cs-home-scroll-down").click(function() {
+    $("html, body").animate({ scrollTop: 860 }, "slow");
+    return false;
+});
 
 
 
