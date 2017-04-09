@@ -1012,6 +1012,10 @@ header{
 }
 
 
+
+
+
+
 /*-----------------CASE STUDY------------------*/
 #cs-body{
 	background-color: white;
@@ -1069,7 +1073,7 @@ header{
 	display: inline-block;
 	line-height: 20px;
 	color: #767575;
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 .cs-section01{
@@ -1220,6 +1224,7 @@ header{
 	margin-bottom: 20px;
 	margin-top: -150px;
 	z-index: -1;
+    position: relative;
 }
 
 .cs-persona img{
@@ -1335,7 +1340,11 @@ header{
 }
 
 
-
+.cs-section08 h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
 
 
 
@@ -1723,7 +1732,7 @@ body.open:after {
 /*--NAV*/
 	nav img{
 		padding-top: 0px;
-    	padding-bottom: 15px;
+    	padding-bottom: 7px;
 	}
 
 /*	.nav-down{
@@ -1746,9 +1755,11 @@ body.open:after {
     width: 49%;
 	}
 	.ft-col li {
-     padding: 0 0 0 0; 
-    font-size: 0.9em;
+        padding: 0 0 0 0;
+        font-size: 0.9em;
+        display: block;
 	}
+
 
 /*--MAIN*/
 	.col-left{
@@ -1992,11 +2003,36 @@ body.open:after {
         padding-top: 60px;
     }
 
+/*----CS PKG*/
     .img-mobile{
         display: block;
     }
     .img-desktop{
         display: none;
+    }
+    .cs-pkg-70w{
+        width: 100%;
+        margin: auto;
+    }
+    .cs-pkg-70w p, .cs-pkg-70w h2{
+        width: 80%;
+        margin: 20px auto 20px auto;
+    }
+    .cs-pkg-motion {
+        padding: 55px;
+    }
+    .cs-pkg-img-not-100 {
+        width: 100%;
+        margin: auto;
+    }
+    .cs-pkg-box-back-img {
+        padding-bottom: 50px;
+    }
+    .cs-pkg-mikey-label-img {
+        padding: 50px;
+    }
+    #cs-pkg-4bottles {
+        margin-top: 60px;
     }
 
 }
