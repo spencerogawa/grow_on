@@ -1094,9 +1094,6 @@ header{
 /*	margin-right: -50px;*/
 }
 
-
-
-
 .cs-section01 h1, .cs-section03 h1, .cs-section04 h1,  .cs-section06 h1, .cs-section08 h1{
     margin-left: 8%;
     margin-top: 50px;
@@ -1133,7 +1130,6 @@ header{
 	line-height: 20px;
 	color: #767575;
 }
-
 
 .cs-section03{
 	z-index: 1;
@@ -1345,6 +1341,19 @@ header{
     font-weight: 400;
     letter-spacing: 0.1em;
 }
+
+.cs-naming{
+    background-image: url('./images/cs-naming-background.png');
+    background-position: right;
+    background-repeat:no-repeat;
+    background-size: 50%;
+    margin-top: 40vh;
+    margin-bottom: 200px;
+
+
+}
+
+
 
 
 
