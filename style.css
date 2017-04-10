@@ -1483,6 +1483,30 @@ header{
 
 
 
+
+/*---------Case Study APP----------*/
+#cs-app-header{
+    margin:auto;
+    background-color: #fdfdfd;
+    text-align: center;
+}
+
+#cs-app-header img{
+    margin:auto;
+}
+
+#cs-app-container h2{
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
 /*-----------FOOTER---------------*/
 footer {
 	font-size: 0.8em;
