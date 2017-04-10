@@ -64,45 +64,45 @@ $(window).scroll(function(event){
     /*********************** index.html ***********************/
 
     /*********************** app.html ***********************/
-    var homeBgColorApp;
-    // When width is LESS than 780 px
-    if ($( window ).width() < 780) {
-        if (scrollTop < 400) {
-            homeBgColorApp = "rgba(255, 255, 255, 1.0)";
-        } else if (scrollTop < 2100) {
-            homeBgColorApp = "rgba(78, 196, 209, 1.0)";
-        } else if (scrollTop < 3000) {
-            homeBgColorApp = "rgba(255, 255, 0, 1.0)";
-        } else if (scrollTop < 3900) {
-            homeBgColorApp = "rgba(245, 201, 35, 1.0)";
-        } else if (scrollTop < 4800) {
-            homeBgColorApp = "rgba(255, 0, 255, 1.0)";
-        } else if (scrollTop < 5600) {
-            homeBgColorApp = "rgba(243, 114, 88, 1.0)";
-        } else {
-            homeBgColorApp = "rgba(255, 255, 255, 1.0)";
-        }
-    }
-    // When width is LARGER than 780 px
-    else {
-        if (scrollTop < 400) {
-            homeBgColorApp = "rgba(255, 255, 255, 1.0)";
-        } else if (scrollTop < 2100) {
-            homeBgColorApp = "rgba(78, 196, 209, 1.0)";
-        } else if (scrollTop < 3000) {
-            homeBgColorApp = "rgba(255, 255, 0, 1.0)";
-        } else if (scrollTop < 3900) {
-            homeBgColorApp = "rgba(245, 201, 35, 1.0)";
-        } else if (scrollTop < 4800) {
-            homeBgColorApp = "rgba(255, 0, 255, 1.0)";
-        } else if (scrollTop < 5600) {
-            homeBgColorApp = "rgba(243, 114, 88, 1.0)";
-        } else {
-            homeBgColorApp = "rgba(255, 255, 255, 1.0)";
-        }
-    }
-    $('#app-body').css('background-color', homeBgColorApp);
-    /*********************** app.html ***********************/
+    // var homeBgColorApp;
+    // // When width is LESS than 780 px
+    // if ($( window ).width() < 780) {
+    //     if (scrollTop < 400) {
+    //         homeBgColorApp = "rgba(255, 255, 255, 1.0)";
+    //     } else if (scrollTop < 2100) {
+    //         homeBgColorApp = "rgba(78, 196, 209, 1.0)";
+    //     } else if (scrollTop < 3000) {
+    //         homeBgColorApp = "rgba(255, 255, 0, 1.0)";
+    //     } else if (scrollTop < 3900) {
+    //         homeBgColorApp = "rgba(245, 201, 35, 1.0)";
+    //     } else if (scrollTop < 4800) {
+    //         homeBgColorApp = "rgba(255, 0, 255, 1.0)";
+    //     } else if (scrollTop < 5600) {
+    //         homeBgColorApp = "rgba(243, 114, 88, 1.0)";
+    //     } else {
+    //         homeBgColorApp = "rgba(255, 255, 255, 1.0)";
+    //     }
+    // }
+    // // When width is LARGER than 780 px
+    // else {
+    //     if (scrollTop < 400) {
+    //         homeBgColorApp = "rgba(255, 255, 255, 1.0)";
+    //     } else if (scrollTop < 2100) {
+    //         homeBgColorApp = "rgba(78, 196, 209, 1.0)";
+    //     } else if (scrollTop < 3000) {
+    //         homeBgColorApp = "rgba(255, 255, 0, 1.0)";
+    //     } else if (scrollTop < 3900) {
+    //         homeBgColorApp = "rgba(245, 201, 35, 1.0)";
+    //     } else if (scrollTop < 4800) {
+    //         homeBgColorApp = "rgba(255, 0, 255, 1.0)";
+    //     } else if (scrollTop < 5600) {
+    //         homeBgColorApp = "rgba(243, 114, 88, 1.0)";
+    //     } else {
+    //         homeBgColorApp = "rgba(255, 255, 255, 1.0)";
+    //     }
+    // }
+    // $('#app-body').css('background-color', homeBgColorApp);
+    // /*********************** app.html ***********************/
 
     if (scrollTop > 40 && $( window ).width() < 780) {
         $('#scroll-to-top').css("display", "inline");
