@@ -1501,11 +1501,32 @@ header{
     text-transform: uppercase;
 }
 
+#cs-app-container h3{
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #f27258;
+    font-size: 2em;
+    margin: 200px 0 19px 0;
+}
+
 
 .cs-app-text-center{
     text-align: center;
     padding-bottom: 20px;
 }
+
+
+.cs-app-list li{
+    list-style-type: none;
+    padding-bottom: 15px;
+    color: #555555;
+}
+
+.bold{
+    font-weight: 600;
+}
+
 
 
 
