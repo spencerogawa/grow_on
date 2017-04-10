@@ -1354,12 +1354,41 @@ header{
 }
 
 
+.cs-section08-w60{
+    width: 60vw;
+    margin:auto;
+}
 
+.cs-section08-w60 div{
+    width:49%;
+    display: inline-block;
+    vertical-align: top;
+}
 
+#cs-logo-sketch-img{
+    padding-top: 70px;
+}
 
+#cs-home-key-messages{
+    text-transform: uppercase;
+    width:20%;
+    margin:auto;
+}
 
+.list-lowercase li{
+    list-style: lower-alpha;
+    width: 300px;
+    line-height: 20px;
+    color: #767575;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    padding-bottom: 15px;
+}
 
-
+.cs-section08-center{
+    width:100%;
+    text-align: center;
+}
 
 /*------------Case Study PKG------------*/
 #cs-pkg-main-container{
