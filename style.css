@@ -1443,6 +1443,46 @@ header{
 
 
 
+
+
+
+
+
+/*---------Case Study WEB----------*/
+#cs-web-container{
+    width:70%;
+    margin:auto;
+}
+#cs-web-container h2{
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.cs-web-70{
+    display: inline-block;
+    width:69%;
+    vertical-align: middle;
+}
+
+
+.cs-web-30{
+    display: inline-block;
+    width:29%;
+    vertical-align: middle;
+}
+
+.cs-web-50{
+    display: inline-block;
+    width:49%;
+    vertical-align: middle;
+}
+
+
+
+
+
+
 /*-----------FOOTER---------------*/
 footer {
 	font-size: 0.8em;

@@ -48,7 +48,7 @@ $(window).scroll(function(event){
             homeBgColor = "rgba(78, 196, 209, 1.0)";
         } else if (scrollTop < 5900) {
             homeBgColor = "rgba(255, 255, 255, 1.0)";
-        } else if (scrollTop < 8800) {
+        } else if (scrollTop < 9400) {
             homeBgColor = "rgba(245, 201, 35, 1.0)";
         } else if (scrollTop < 9700) {
             homeBgColor = "rgba(255, 255, 255, 1.0)";
