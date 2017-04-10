@@ -1502,7 +1502,10 @@ header{
 }
 
 
-
+.cs-app-text-center{
+    text-align: center;
+    padding-bottom: 20px;
+}
 
 
 
