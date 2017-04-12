@@ -252,7 +252,7 @@ function customType() {
             {type: '<br>'},
             {type: 'and become '},
             {type: '<br>'},
-            {type: 'homeowner? '},
+            {type: 'a homeowner? '},
             {delay: 1500}
         ]
     });
