@@ -638,10 +638,14 @@ header{
 }
 
 .stories-last-section{
-/*	margin-top: 500px;*/
 	text-align: center;
 	margin-bottom: 200px;
 	margin-top: 60px;
+}
+
+.story-to-online-shop, .become-growon-section{
+    text-align: center;
+    margin-top: 60px;
 }
 
 .stories-last-section h3{
@@ -653,27 +657,37 @@ header{
 	transition: .3s;
 }
 
-.stories-last-section p{
-	border-radius:360px;
+.story-to-online-shop p{
     transition: .3s;
     display: inline-block;
-	text-align: center;
+	text-align:center;
 	margin: auto;
 	padding-left: 15px;
 	margin-bottom: 0;
 }
 
-.stories-last-section p:hover{
+.story-to-online-shop p:hover{
 	color: #f27258;
-
-/*	color: white;
-	border: 1px solid rgba(0, 0, 0, 0);*/
-
+    cursor: pointer;
 }
 
+.become-growon-btn{
+    margin: auto;
+    border: solid 1px #50c4d0;
+    text-align: center;
+    border-radius: 360px;
+    width: 300px;
+    transition: .3s;
+}
 
+.become-growon-btn:hover{
+    cursor: pointer;
+    background-color: #50c4d0;
+}
 
-
+.become-growon-section p{
+    font-size: 0.9em;
+}
 
 
 
@@ -873,6 +887,10 @@ header{
 	margin: auto;
 }
 
+.contact-form{
+    width: 60vw;
+    margin: auto;
+}
 
 #about-body h1,#about-body p{
 	text-align: center;
@@ -921,7 +939,7 @@ header{
 
 #contact-wrapper textarea{
 	margin: auto;
-	width: 50vw;
+	width: 50.2vw;
 	height: 200px;
 	padding: 15px;
 	border: solid 0.5px #d9d9d9;
@@ -940,7 +958,7 @@ header{
 	border: 0.5px solid #d9d9d9;
 	padding: 15px;
 	margin-bottom: 5px;
-	width: 50vw;
+	width: 50.2vw;
 	text-align: center;
 	margin: auto;
 	color: #f37359;
@@ -991,6 +1009,10 @@ header{
 	letter-spacing: 0.1em;
 	margin-top: 5vh;
 	margin-bottom: 20px;
+}
+
+#contact-thanks-body p{
+    margin-bottom: 100px;
 }
 
 .contact-tnx-last-section{
