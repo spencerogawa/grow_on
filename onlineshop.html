@@ -50,7 +50,11 @@
 	<div id="onlineshop-wrapper">
         <div id="onlineshop-header">
             <p>Get GROWON cold pressed juice!</p>
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <div class="total">
+                Total $<span>0</span>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+
         </div>
 
         <div id="juice-body">
@@ -58,52 +62,77 @@
                 <div class="online-juice-img">
                     <img src="./images/onlineshop-Lina-front.png" width="70%">
                 </div>
-                <div class="online-juice-text">
+
+                <figcaption class="online-juice-text">
                     <h1 class="onlineshop-juice-name">Lina</h1>
                     <p>Pear<br>Apple<br>Squash<br>Carrot<br>Cinnamon</p>
-                    <p>$8.50</p>
-                    <p>Quontity :</p>
-                    <p class="add-cart-btn">Add to cart</p>
-                </div>
+                    <div class="price">$<span>8.50</span></div>
+
+                    <div class="product-number">
+                        <button class="min-cart">-</button>
+                        <p class="count">0</p>
+                        <button class="add-cart">+</button>
+                    </div>
+                </figcaption>
+
             </div>
 
             <div class="juice-col">
                 <div class="online-juice-img">
                     <img src="./images/onlineshop-Ray-front.png" width="70%">
                 </div>
-                <div class="online-juice-text">
+
+                <figcaption class="online-juice-text">
                     <h1 class="onlineshop-juice-name">Raymond</h1>
                     <p>Beets<br>Apple<br>Bok choy<br>Mint<br>Ginger</p>
-                    <p>$8.50</p>
-                    <p>Quontity :</p>
-                    <p class="add-cart-btn">Add to cart</p>
-                </div>
+                    <div class="price">$<span>8.50</span></div>
+
+                    <div class="product-number">
+                        <button class="min-cart">-</button>
+                        <p class="count">0</p>
+                        <button class="add-cart">+</button>
+                    </div>
+                </figcaption>
+
             </div>
 
             <div class="juice-col">
                 <div class="online-juice-img">
                     <img src="./images/onlineshop-mikey-front.png" width="70%">
                 </div>
-                <div class="online-juice-text">
+
+                <figcaption class="online-juice-text">
                     <h1 class="onlineshop-juice-name">Mikey</h1>
                     <p>Radish<br>Apple<br>Lemon<br>Yogurt<br>Peach</p>
-                    <p>$8.50</p>
-                    <p>Quontity :</p>
-                    <p class="add-cart-btn">Add to cart</p>
-                </div>
+                    <div class="price">$<span>8.50</span></div>
+
+                    <div class="product-number">
+                        <button class="min-cart">-</button>
+                        <p class="count">0</p>
+                        <button class="add-cart">+</button>
+                    </div>
+                </figcaption>
+
+
             </div>
 
             <div class="juice-col">
                 <div class="online-juice-img">
                     <img src="./images/onlineshop-EandT-front.png" width="70%">
                 </div>
-                <div class="online-juice-text">
+
+                <figcaption class="online-juice-text">
                     <h1 class="onlineshop-juice-name">E&T</h1>
                     <p>Kale <br>Apple<br>Parsnip<br>Mint<br>Cucumber</p>
-                    <p>$8.50</p>
-                    <p>Quontity :</p>
-                    <p class="add-cart-btn">Add to cart</p>
-                </div>
+                    <div class="price">$<span>8.50</span></div>
+
+                    <div class="product-number">
+                        <button class="min-cart">-</button>
+                        <p class="count">0</p>
+                        <button class="add-cart">+</button>
+                    </div>
+                </figcaption>
+
             </div>
 
         </div>
@@ -134,6 +163,38 @@
 	</div>
 	</footer>
 
+
+    <div class="checkout">
+        <section class="beforeCheckout">
+            <h1>Your Cart</h1>
+            <ul>
+                <div class="empty">Your cart is currently empty</div>
+                <!--
+                            <li class ="e">
+                                <img class="thumImage" src="./images/onlineshop-Lina-front.png" alt="place holder image">
+                                <p class="thumTitle">LINA</p>
+                                <div >$<span class="thumPrice">8.50</span> x <span class="thumCount">0</span> </div>
+                            </li>
+                -->
+            </ul>
+
+            <div class="checkoutPrice">$<span class="thumTotalPrice">0</span></div>
+
+            <div class="checkoutBtn">Checkout</div>
+            <h3>Continue Shopping</h3>
+        </section>
+
+        <section class="afterCheckout">
+            <h1>Thanks for your order! </h1>
+            <h2>
+                Items should be shipped within 5 days.<br>
+                Your order number is: <b>308512033</b>
+            </h2>
+            <p class="backBtn"><a href="index.html">Go back to homepage</a></p>
+        </section>
+
+    </div>
+
 	
 
 
@@ -149,6 +210,9 @@
 		<!-- typewrite -->
 		<script src="//code.jquery.com/jquery.min.js"></script>
 		<script src="src/typewrite.js"></script>
+
+        <!-- TweenMax -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 
 </body>
 </html>
