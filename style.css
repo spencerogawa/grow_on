@@ -701,7 +701,7 @@ header{
     color: #d9d9d9;
     word-spacing: 0.2em;
     font-size: 2em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     margin: 0;
     font-weight: 400;
 }
@@ -1653,6 +1653,25 @@ header{
 
 .bold{
     font-weight: 600;
+}
+
+.cs-70vw{
+    margin: auto;
+    width: 70%;
+}
+
+.cs-col_50{
+    margin: auto;
+    text-align: center;
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cs-col_50 p{
+    text-align: left;
+    width: 60%;
+    margin: auto;
 }
 
 
