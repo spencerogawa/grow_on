@@ -978,10 +978,27 @@ header{
     background-size: 100%;
     background-repeat:no-repeat;
 }
-
-
-
-
+.ray-juice-img{
+    background-image: url('./images/onlineshop-Ray-front.png');
+    height: 400px;
+    width: 115px;
+    background-size: 100%;
+    background-repeat:no-repeat;
+}
+.mikey-juice-img{
+    background-image: url('./images/onlineshop-mikey-front.png');
+    height: 400px;
+    width: 115px;
+    background-size: 100%;
+    background-repeat:no-repeat;
+}
+.EandT-juice-img{
+    background-image: url('./images/onlineshop-EandT-front.png');
+    height: 400px;
+    width: 115px;
+    background-size: 100%;
+    background-repeat:no-repeat;
+}
 
 
 
