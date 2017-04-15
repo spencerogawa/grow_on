@@ -2190,14 +2190,31 @@ body.open:after {
     width: 80%;
 }
 
+/*------------------------------------Tablet View-------------------------------------------*/
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+}
+
+/*--NAV*/
+nav img{
+    padding-top: 0px;
+    padding-bottom: 7px;
+}
+
+.desktop-menu{
+    display: none;
+}
+
+.mobile-nav{
+    display: inline;
+}
 
 
 
 
 /*------------------------------------Mobile View-------------------------------------------*/
 
-@media screen and (max-width:780px){
+@media screen and (max-width:767px){
 	p{
 		font-size: 1em;
 	}

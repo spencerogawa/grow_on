@@ -148,7 +148,11 @@ function hasScrolled() {
 
 // HOME Scroll Down ///
 $("#home-scroll-down").click(function() {
-    $("html, body").animate({ scrollTop: 860 }, "slow");
+    var scrollNum = 860;
+    if ($( window ).width() < 780) {
+        scrollNum = 500;
+    }
+    $("html, body").animate({ scrollTop: scrollNum }, "slow");
     return false;
 });
 
