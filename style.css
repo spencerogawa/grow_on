@@ -2028,6 +2028,13 @@ body.open:after {
     width: 80%;
 }
 
+
+
+
+
+
+/*------------------------------------Mobile View-------------------------------------------*/
+
 @media screen and (max-width:780px){
 	p{
 		font-size: 1em;
@@ -2049,15 +2056,11 @@ body.open:after {
     	padding-bottom: 7px;
 	}
 
-/*	.nav-down{
-		height: 40px;
-	}*/
 	.desktop-menu{
 		display: none;
 	}
 
 	.mobile-nav{
-	/*visibility: visible;*/
 		display: inline;
 	}
 /*--FOOTER*/
@@ -2076,25 +2079,32 @@ body.open:after {
 
 
 /*--MAIN*/
+    .main-container{
+        width: 85%;
+    }
 	.col-left{
+        margin: auto;
 		display: block;
 		width: 100%;
 		padding-left: 0;
 	}
 	.col-right{
+        margin: auto;
 		display: block;
 		width: 100%;
 	}
 
 	#bg-light_blue {
+        margin: auto;
     margin-top: 15px;
+        margin-bottom: 150px;
 	}
 
 	#bg-light_blue h2{
-	font-size: 1.6em;
-    letter-spacing: 4px;
+    font-size: 1.4em;
+    letter-spacing: 2px;
     padding-top: 30px;
-    word-spacing: 1px;
+    word-spacing: 0.5px;
 	}
 
 	#bg-light_blue .col-left h2 {
@@ -2104,13 +2114,20 @@ body.open:after {
 	#bg-light_blue p {
     padding-bottom: 10px;
 	}
+
+    #bg-light_blue img{
+        width: 80%;
+        text-align: center;
+    }
+
+
 	.col-1 {
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 	}
 
 	.bg-white h1{
 		font-size: 2em;
-		   margin-bottom: 50px;
+		   margin-bottom: 100px;
 	}
 	.bg-white {
     margin-top: 50px;
@@ -2121,9 +2138,44 @@ body.open:after {
     letter-spacing: 4px;
 	}
 
+    #home-why-farm-header {
+        margin-bottom: 200px;
+        margin-top: 150px;
+    }
+
 	.bg-yellow {
     margin-top: 50px;
 	}
+
+    .bg-yellow h1 {
+        text-align: center;
+        word-spacing: 0.5em;
+        letter-spacing: 0.15em;
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    .bg-yellow h2 {
+        word-spacing: 0.05em;
+        font-size: 1.45em;
+        letter-spacing: 0.05em;
+    }
+
+    .bg-red h2 {
+        word-spacing: 2px;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+    }
+
+    .home-last-section h3 {
+        word-spacing: 0.2em;
+        font-size: 1.1em;
+        letter-spacing: 0.05em;
+    }
+    .home-last-section {
+        margin-top: 150px;
+        margin-bottom: 90px;
+    }
 
 /*--STORIES*/
 #stories-top-image img {
@@ -2177,6 +2229,14 @@ body.open:after {
 	.stories-last-section {
     margin-bottom: 120px;
 	}
+
+    .become-growon-btn {
+        width: 230px;
+    }
+
+
+
+
 /*--ABOUT*/
 	#about-body h1, #about-body p {
     text-align: left; 
@@ -2188,6 +2248,9 @@ body.open:after {
     width: 80vw;
     font-size: 0.9em;
 	}
+    .contact-form {
+        width: 100%;
+    }
 /*--APP*/
 	#app_header {
     background-image: url(images/app_top_mobile.png);
