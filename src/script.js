@@ -265,7 +265,6 @@ $('.myAccount').click(function(){
         opacity:"1",
         // delay:0.8
     });
-
 });
 
 
@@ -279,17 +278,12 @@ $('.checkout h3').click(function(){
         display:"none",
         opacity:"0",
     });
-
     TweenMax.to('.checkoutBlack',0.8,{
-
         display:"none",
         opacity:"0",
         delay:0.5
     });
-
-
-
-})
+});
 
 // ------place order---------
 $('.checkoutBtn').click(function(){
@@ -305,9 +299,7 @@ $('.checkoutBtn').click(function(){
             opacity:"1",
             delay:0.5
         });
-
-
-    }else{}
+    }
 });
 
 // ----------Close Checkout-------------
@@ -318,15 +310,25 @@ $('.backBtn').click(function(){
     TweenMax.to('.checkout',0.8,{
         transform:"translateY(0px)",
         display:"none",
-        opacity:"0",
+        opacity:"0"
     });
-
     TweenMax.to('.checkoutBlack',0.8,{
-
         display:"none",
         opacity:"0",
         delay:0.5
     });
+});
+
+/*
+ * Close modal when the area outside of the modal is clicked.
+ */
+$('#onlineshop-div').click(function(){
+    var checkoutAttrStyle = $('.checkout').attr('style');
+    if (checkoutAttrStyle) {
+        if (checkoutAttrStyle.search("block") > 0) {
+            $('.backBtn').click();
+        }
+    }
 });
 
 
