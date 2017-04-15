@@ -202,10 +202,10 @@ $('.add-cart').click(function(){
 
     if (currentCount > 1) {
         $('.checkout ul').find('.'+find).remove();
-        $('.checkout ul').prepend('<li class ="'+find+'"><img width=50 class="thumImage" src="'+imagePlace+'" alt="place holder image"><p class="thumTitle">'+title+'</p><div class="thumSummary">$<span class="thumPrice">'+price.toFixed(2)+'</span> x<span class="thumCount">'+currentCount+'</span></div></li>');
+        $('.checkout ul').prepend('<li class ="'+find+'"><img class="thumImage" src="'+imagePlace+'" alt="place holder image"><p class="thumTitle">'+title+'</p><div class="thumSummary">$<span class="thumPrice">'+price.toFixed(2)+'</span> x<span class="thumCount">'+currentCount+'</span></div></li>');
 
     }else{
-        $('.checkout ul').prepend('<li class ="'+find+'"><img width=50 class="thumImage" src="'+imagePlace+'" alt="place holder image"><p class="thumTitle">'+title+'</p><div class="thumSummary">$<span class="thumPrice">'+price.toFixed(2)+'</span> x<span class="thumCount">'+currentCount+'</span></div></li>');
+        $('.checkout ul').prepend('<li class ="'+find+'"><img class="thumImage" src="'+imagePlace+'" alt="place holder image"><p class="thumTitle">'+title+'</p><div class="thumSummary">$<span class="thumPrice">'+price.toFixed(2)+'</span> x<span class="thumCount">'+currentCount+'</span></div></li>');
     }
     if (totalPrice >0){
         $(".empty").hide();

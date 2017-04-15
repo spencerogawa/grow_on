@@ -739,6 +739,12 @@ header{
     padding: 10% 1% 0 1%;
 }
 
+.juice-box-col{
+    width: 100%;
+    display: inline-block;
+    padding: 10% 1% 0 1%;
+}
+
 .online-juice-img{
     width:49%;
     display: inline-block;
@@ -790,6 +796,7 @@ header{
 
 .price{
     color: #555555;
+    letter-spacing: 2px;
 }
 
 .totalItemNumber{
@@ -801,10 +808,10 @@ header{
     width: 80%;
     z-index: 90;
     position: fixed;
-    top: 55px;
+    top: -55px;
     margin: auto;
     margin-right: 5%;
-    margin-left: 5%;
+    margin-left: 9%;
     padding: 1% 5% 1% 5%;
     display: none;
     overflow: hidden;
@@ -857,6 +864,8 @@ header{
     margin-top: 30px;
     transition:.5s;
     cursor:pointer;
+    color: #555555;
+    letter-spacing: 2px;
 }
 
 .checkoutBtn:hover{
@@ -914,6 +923,9 @@ header{
     float: right;
     transition:.5s;
     font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1em;
+    color: #555;
 }
 
 .beforeCheckout h3:hover{
@@ -923,11 +935,57 @@ header{
 
 .thumSummary{
     padding-left: 50px;
+    color: #555555;
+    letter-spacing: 1px;
 }
 
 .thumTitle{
     padding-right: 50px;
 }
+
+.thumPrice{
+    padding: 0 5px;
+}
+
+.thumCount{
+    padding-left: 5px;
+}
+
+.checkoutPrice {
+    color: #555555;
+    letter-spacing: 3px;
+}
+
+#online-juice-box-img {
+    width: 400px; /* width of image */
+    height: 400px; /* height of image */
+    background-image: url('./images/onlineshop_box.png');
+    background-size: 100%;
+    transition: .05s;
+}
+
+#online-juice-box-img:hover {
+    background-image: url('./images/onlineshop_box-hover.png');
+    height: 400px;
+    width: 400px;
+    background-position: center;
+}
+
+.lina-juice-img{
+    background-image: url('./images/onlineshop-Lina-front.png');
+    height: 400px;
+    width: 115px;
+    background-size: 100%;
+    background-repeat:no-repeat;
+}
+
+
+
+
+
+
+
+
 
 
 /*-----------------ABOUT------------------*/
@@ -2396,6 +2454,7 @@ body.open:after {
         padding: 10% 0% 0 0%;
     }
 
+
     .add-cart-btn {
          width: 100%;
     }
@@ -2404,7 +2463,7 @@ body.open:after {
     }
 
 
-/*----CS HOME------------------------------*/
+/*----CS HOME*/
     #cs-header-title img{
         width: 70%;
     }
