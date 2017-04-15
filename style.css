@@ -850,6 +850,10 @@ header{
     cursor:pointer;
 }
 
+.checkoutBtn:hover{
+    background-color: #f5c923;
+}
+
 .checkoutBlack{
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 80;
@@ -860,7 +864,7 @@ header{
     display: none;
     opacity: 0;
 }
-.myAccount{
+.right-corner-my-account-nav{
     transition:.5s;
     cursor:pointer;
     display: block;
@@ -870,12 +874,37 @@ header{
     padding-bottom: 10px;
 }
 
+.myAccount{
+    transition:.5s;
+}
 
 .myAccount:hover{
     color: #50c4d0;
     cursor: pointer;
 }
 
+.afterCheckout{
+    display: none;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.beforeCheckout h1{
+    padding-bottom: 50px;
+}
+
+.beforeCheckout h3{
+    text-align: right;
+    width: 100%;
+    float: right;
+    transition:.5s;
+    font-weight: 400;
+}
+
+.beforeCheckout h3:hover{
+    cursor: pointer;
+    color: #50c4d0;
+}
 
 
 /*-----------------ABOUT------------------*/
@@ -1606,10 +1635,22 @@ header{
     vertical-align: middle;
 }
 
+#cs-web-coding-screenshot, #cs-web-logo-aftereffect-screenshot{
+    margin: auto;
+    text-align: center;
+}
 
+#cs-web-logo-motion{
+    background-color: black;
+    margin: auto;
+    text-align: center;
 
+}
 
-
+#cs-web-logo-motion img{
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
 
 
 /*---------Case Study APP----------*/
