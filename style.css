@@ -713,10 +713,10 @@ header{
 }
 
 #onlineshop-header{
-    padding-top: 100px;
+    padding-top: 80px;
     overflow: hidden;
     border-bottom: 1px solid #c8c8c8;
-    position: absolute;
+    position: fixed;
     width: 65%;
     background-color: white;
 }
@@ -731,7 +731,7 @@ header{
 }
 #juice-body{
     padding-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 .juice-col{
     width: 47%;
@@ -784,9 +784,17 @@ header{
     float: right;
     letter-spacing: 0.05em;
     transition: .3s;
+    color: #555;
+    letter-spacing: 2px;
 }
 
+.price{
+    color: #555555;
+}
 
+.totalItemNumber{
+    width: 20px;
+}
 .checkout{
     background: white;
     min-height: 500px;
@@ -877,6 +885,7 @@ header{
 
 .myAccount{
     transition:.5s;
+    color: #f27158;
 }
 
 .myAccount:hover{
@@ -890,8 +899,13 @@ header{
     text-align: center;
 }
 
+.beforeCheckout ul{
+    padding-left: 15px;
+}
+
 .beforeCheckout h1{
-    padding-bottom: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .beforeCheckout h3{
@@ -905,6 +919,14 @@ header{
 .beforeCheckout h3:hover{
     cursor: pointer;
     color: #50c4d0;
+}
+
+.thumSummary{
+    padding-left: 50px;
+}
+
+.thumTitle{
+    padding-right: 50px;
 }
 
 
@@ -2380,9 +2402,7 @@ body.open:after {
     #onlineshop-body h1{
         font-size: 2em;
     }
-    #onlineshop-header {
-        padding-top: 60px;
-    }
+
 
 /*----CS HOME------------------------------*/
     #cs-header-title img{
