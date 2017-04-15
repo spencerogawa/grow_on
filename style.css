@@ -2397,7 +2397,7 @@ body.open:after {
 /*----ONLINE SHOP*/
     #juice-body {
         padding-bottom: 100px;
-        padding-top: 65px;
+        padding-top: 75px;
     }
     .add-cart-btn {
         width: 100%;
@@ -2408,6 +2408,7 @@ body.open:after {
 
     #onlineshop-body p, .price{
         font-size: 0.9em;
+        margin-top: 5px;
     }
     #onlineshop-wrapper {
         width: 90%;
@@ -2446,6 +2447,9 @@ body.open:after {
         display: block;
         padding: 0;
         padding-bottom: 30px;
+    }
+    .juice-box-col {
+        padding: 10% 1% 30px 1%;
     }
 
 
