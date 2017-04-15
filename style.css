@@ -2205,20 +2205,20 @@ and (min-width : 1025px) {
 /*------------------------------------Tablet View-------------------------------------------*/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-}
 
-/*--NAV*/
-nav img{
-    padding-top: 0px;
-    padding-bottom: 7px;
-}
+    /*--NAV*/
+    nav img {
+        padding-top: 0px;
+        padding-bottom: 7px;
+    }
 
-.desktop-menu{
-    display: none;
-}
+    .desktop-menu {
+        display: none;
+    }
 
-.mobile-nav{
-    display: inline;
+    .mobile-nav {
+        display: inline;
+    }
 }
 
 
