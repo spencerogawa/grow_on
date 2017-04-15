@@ -804,7 +804,8 @@ header{
 }
 
 .checkout img{
-    width: 10%;
+    width: 2%;
+    height: 2%;
     vertical-align: middle;
 }
 .checkout li{
