@@ -713,7 +713,7 @@ header{
 }
 
 #onlineshop-header{
-    padding-top: 80px;
+    padding-top: 60px;
     overflow: hidden;
     border-bottom: 1px solid #c8c8c8;
     position: fixed;
@@ -764,6 +764,7 @@ header{
 .online-juice-text{
     display: inline-block;
     vertical-align:middle;
+    padding-left: 15px;
 }
 
 .online-juice-text button{
@@ -908,6 +909,30 @@ header{
     text-align: center;
 }
 
+.afterCheckout h1{
+    font-size: 3em;
+}
+
+.afterCheckout h2{
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #555555;
+    letter-spacing: 2px;
+}
+
+.backBtn{
+    border: 1px solid #50c4d0;
+    padding: 3px 35px;
+    margin-top: 50px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.backBtn:hover{
+    background-color: #50c4d0;
+    cursor: pointer;
+}
+
 .beforeCheckout ul{
     padding-left: 15px;
 }
@@ -962,6 +987,7 @@ header{
     background-image: url('./images/onlineshop_box.png');
     background-size: 100%;
     transition: .05s;
+    background-position: center;
 }
 
 #online-juice-box-img:hover {
@@ -978,6 +1004,15 @@ header{
     background-size: 100%;
     background-repeat:no-repeat;
 }
+
+.lina-juice-img:hover {
+    background-image: url('./images/onlineshop-lina-hover-animation.gif');
+    height: 400px;
+    width: 108px;
+    background-position: center;
+}
+
+
 .ray-juice-img{
     background-image: url('./images/onlineshop-Ray-front.png');
     height: 400px;
@@ -985,6 +1020,14 @@ header{
     background-size: 100%;
     background-repeat:no-repeat;
 }
+.ray-juice-img:hover {
+    background-image: url('./images/onlineshop-ray-hover-animation.gif');
+    height: 400px;
+    width: 108px;
+    background-position: center;
+}
+
+
 .mikey-juice-img{
     background-image: url('./images/onlineshop-mikey-front.png');
     height: 400px;
@@ -992,6 +1035,14 @@ header{
     background-size: 100%;
     background-repeat:no-repeat;
 }
+.mikey-juice-img:hover {
+    background-image: url('./images/onlineshop-mikey-hover-animation.gif');
+    height: 400px;
+    width: 108px;
+    background-position: center;
+}
+
+
 .EandT-juice-img{
     background-image: url('./images/onlineshop-EandT-front.png');
     height: 400px;
@@ -999,7 +1050,12 @@ header{
     background-size: 100%;
     background-repeat:no-repeat;
 }
-
+.EandT-juice-img:hover {
+    background-image: url('./images/onlineshop-EandT-hover-animation.gif');
+    height: 400px;
+    width: 105px;
+    background-position: top;
+}
 
 
 
