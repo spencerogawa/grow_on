@@ -170,24 +170,30 @@ $("#cs-home-scroll-down").click(function() {
 
 $('.add-cart').click(function(){
     var currentCount = parseInt($(this).parent().find('.count').text());
-    var totalPrice = parseInt($('.total span').text());
-
-    var price = parseInt($(this).parent().find(".price span").text());
-    var title = $(this).parent().find('.product-name').text();
+    console.log(currentCount);
+    var totalPrice = parseFloat($('.total span').text());
+    console.log(totalPrice);
+    var price = parseFloat($(this).parent().parent().find(".price span").text());
+    console.log(price);
+    var title = $(this).parent().parent().find('.onlineshop-juice-name').text();
+    console.log(title);
     var find = title.replace(/\s/g, '');
-    var imagePlace = $(this).parent().parent().find('img').attr('src');
+    console.log(find);
+    var imagePlace = $(this).parent().parent().parent().find('img').attr('src');
+    console.log(imagePlace);
     var totalItemNumber = parseInt($('.totalItemNumber').text());
+    console.log(totalItemNumber);
 
     currentCount = currentCount + 1;
     totalItemNumber = totalItemNumber +1;
     totalPrice = totalPrice + price;
 
 
-    $('.total span').text(totalPrice);
+    $('.total span').text(totalPrice.toFixed(2));
 
 
 
-    $('.thumTotalPrice').text(totalPrice)
+    $('.thumTotalPrice').text(totalPrice.toFixed(2));
     $(this).parent().find('.count').text(currentCount);
     $(this).parent().parent().addClass('itemClicked');
 
@@ -196,10 +202,10 @@ $('.add-cart').click(function(){
 
     if (currentCount > 1) {
         $('.checkout ul').find('.'+find).remove();
-        $('.checkout ul').prepend('<li class ="'+find+'"><img class="thumImage" src="'+imagePlace+'" alt="place holder image"><p class="thumTitle">'+title+'</p><div >$<span class="thumPrice">'+price+'</span> x<span class="thumCount">'+currentCount+'</span></div></li>');
+        $('.checkout ul').prepend('<li class ="'+find+'"><img width=50 class="thumImage" src="'+imagePlace+'" alt="place holder image"><p class="thumTitle">'+title+'</p><div >$<span class="thumPrice">'+price.toFixed(2)+'</span> x<span class="thumCount">'+currentCount+'</span></div></li>');
 
     }else{
-        $('.checkout ul').prepend('<li class ="'+find+'"><img class="thumImage" src="'+imagePlace+'" alt="place holder image"><p class="thumTitle">'+title+'</p><div >$<span class="thumPrice">'+price+'</span> x<span class="thumCount">'+currentCount+'</span></div></li>');
+        $('.checkout ul').prepend('<li class ="'+find+'"><img width=50 class="thumImage" src="'+imagePlace+'" alt="place holder image"><p class="thumTitle">'+title+'</p><div >$<span class="thumPrice">'+price.toFixed(2)+'</span> x<span class="thumCount">'+currentCount+'</span></div></li>');
     }
     if (totalPrice >0){
         $(".empty").hide();
@@ -211,9 +217,9 @@ $('.add-cart').click(function(){
 // ---------------cart item minus--------------------------------
 $('.min-cart').click(function(){
     var currentCount = parseInt($(this).parent().find('.count').text());
-    var totalPrice = parseInt($('.total span').text());
-    var price = parseInt($(this).parent().find(".price span").text());
-    var title = $(this).parent().find('.product-name').text();
+    var totalPrice = parseFloat($('.total span').text());
+    var price = parseFloat($(this).parent().parent().find(".price span").text());
+    var title = $(this).parent().parent().find('.onlineshop-juice-name').text();
     var find = title.replace(/\s/g, '');
     var imagePlace = $(this).parent().parent().find('img').attr('src');
     var totalItemNumber = parseInt($('.totalItemNumber').text());
@@ -224,8 +230,8 @@ $('.min-cart').click(function(){
         currentCount = currentCount - 1;
         totalPrice = totalPrice - price;
         totalItemNumber = totalItemNumber -1;
-        $('.total span').text(totalPrice);
-        $(".thumTotalPrice").text(totalPrice)
+        $('.total span').text(totalPrice.toFixed(2));
+        $(".thumTotalPrice").text(totalPrice.toFixed(2))
         $(this).parent().find('.count').text(currentCount);
         $('.checkout ul').find('.'+find).remove();
         $('.totalItemNumber').text(totalItemNumber);
@@ -236,11 +242,11 @@ $('.min-cart').click(function(){
         totalPrice = totalPrice - price;
         totalItemNumber = totalItemNumber -1;
         $('.totalItemNumber').text(totalItemNumber);
-        $('.total span').text(totalPrice);
-        $(".thumTotalPrice").text(totalPrice)
+        $('.total span').text(totalPrice.toFixed(2));
+        $(".thumTotalPrice").text(totalPrice.toFixed(2))
         $(this).parent().find('.count').text(currentCount);
         $('.checkout ul').find('.'+find).remove();
-        $('.checkout ul').prepend('<li class ="'+find+'"><img class="thumImage" src="'+imagePlace+'" alt="place holder image"><p class="thumTitle">'+title+'</p><div >$<span class="thumPrice">'+price+'</span> x(<span class="thumCount">'+currentCount+'</span>)</div></li>');
+        $('.checkout ul').prepend('<li class ="'+find+'"><img class="thumImage" src="'+imagePlace+'" alt="place holder image"><p class="thumTitle">'+title+'</p><div >$<span class="thumPrice">'+price.toFixed(2)+'</span> x(<span class="thumCount">'+currentCount+'</span>)</div></li>');
     }else{}
 
     if (totalPrice ==0){
