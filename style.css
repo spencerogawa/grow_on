@@ -546,7 +546,7 @@ header{
 }
 
 #EandT-profile-img{
-	background-image: url('images/stories_E&T.png');
+	background-image: url('images/stories_EandT.png');
 	background-position: top;
 	background-repeat:no-repeat;
 	/*background-size: cover;*/
@@ -1193,6 +1193,9 @@ header{
 	padding-top:  35vh;
 	padding-bottom: 5vh;	
 }
+
+
+
 
 #cs-header-title p{
 	text-transform: uppercase;
@@ -2251,7 +2254,7 @@ body.open:after {
     .contact-form {
         width: 100%;
     }
-/*--APP*/
+/*--APP------------------------*/
 	#app_header {
     background-image: url(images/app_top_mobile.png);
     background-position: center;
@@ -2380,7 +2383,84 @@ body.open:after {
         padding-top: 60px;
     }
 
-/*----CS PKG*/
+/*----CS HOME------------------------------*/
+    #cs-header-title img{
+        width: 70%;
+    }
+
+    #cs-header{
+        background-image: url('images/cs-top-bg-mobile.png');
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+    #cs-header-title p {
+        word-spacing: 1px;
+        font-size: 1em;
+        letter-spacing: 3px;
+        padding-bottom: 50px;
+        padding-top: 60px;
+    }
+
+    #cs-main-container h1 {
+        word-spacing: 10px;
+        font-size: 12em;
+    }
+
+    .cs-section01 {
+        background-image: none;
+        margin-top: 40vh;
+        margin-bottom: 30px;
+    }
+
+    .cs-section01 h1, .cs-section03 h1, .cs-section04 h1, .cs-section06 h1, .cs-section08 h1 {
+        margin-left: 0;
+    }
+
+    .cs-section01 h2, .cs-section03 h2, .cs-section04 h2, .cs-section06 h2, .cs-section08 h2 {
+        margin-left: 7%;
+        margin-top: 0;
+        vertical-align: top;
+    }
+    #cs-main-container p {
+         width: 90%;
+        display: inline-block;
+        line-height: 20px;
+        color: #767575;
+        font-size: 1em;
+    }
+    .cs-section01 p, .cs-section03 p, .cs-section04 p, .cs-section06 p {
+        margin-left: 7%;
+        margin-top: 0;
+        vertical-align: top;
+        width: 90%;
+    }
+
+
+
+    .cs-col1 {
+        width: 100%;
+    }
+
+    .cs-col1 img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 110%;
+    }
+
+    .cs-col2 {
+        width: 100%;
+    }
+
+    #cs-main-container h2 {
+        word-spacing: 2px;
+        font-size: 2em;
+        letter-spacing: 4px;
+        padding-left: 7%;
+    }
+
+
+    /*----CS PKG*/
     .img-mobile{
         display: block;
     }
