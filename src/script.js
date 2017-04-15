@@ -177,7 +177,7 @@ $('.add-cart').click(function(){
     console.log(price);
     var title = $(this).parent().parent().find('.onlineshop-juice-name').text();
     console.log(title);
-    var find = title.replace(/\s/g, '');
+    var find = title.replace(/\s/g, '').replace(/&/g, '');
     console.log(find);
     var imagePlace = $(this).parent().parent().parent().find('img').attr('src');
     console.log(imagePlace);
@@ -220,8 +220,8 @@ $('.min-cart').click(function(){
     var totalPrice = parseFloat($('.total span').text());
     var price = parseFloat($(this).parent().parent().find(".price span").text());
     var title = $(this).parent().parent().find('.onlineshop-juice-name').text();
-    var find = title.replace(/\s/g, '');
-    var imagePlace = $(this).parent().parent().find('img').attr('src');
+    var find = title.replace(/\s/g, '').replace(/&/g, '');
+    $(this).parent().parent().parent().find('img').attr('src');
     var totalItemNumber = parseInt($('.totalItemNumber').text());
 
 

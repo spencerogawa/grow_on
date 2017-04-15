@@ -560,7 +560,7 @@ header{
 
 #mikey-profile-img{
 	background-image: url('images/stories_Mikey.png');
-	background-position: center; 
+	background-position: center;
 	background-repeat:no-repeat;
 	/*background-size: cover;*/
 	-webkit-background-size: cover;
@@ -573,7 +573,7 @@ header{
 
 #lina-profile-img{
 	background-image: url('images/stories_Lina.png');
-	background-position: center; 
+	background-position: center;
 	background-repeat:no-repeat;
 	/*background-size: cover;*/
 	-webkit-background-size: cover;
@@ -586,7 +586,7 @@ header{
 
 #ray-profile-img{
 	background-image: url('images/stories_Ray.png');
-	background-position: center; 
+	background-position: center;
 	background-repeat:no-repeat;
 	/*background-size: cover;*/
 	-webkit-background-size: cover;
@@ -2357,9 +2357,62 @@ body.open:after {
 	}
 
 
-	#EandT-profile-img, #mikey-profile-img, #lina-profile-img{
-	height: 50vh;
-	}
+    #mikey-profile-img{
+        background-image: url('images/stories_Mikey_mobile.png');
+        background-position: center;
+        background-repeat:no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 50vh;
+        position: relative;
+    }
+
+    #EandT-profile-img{
+        background-image: url('images/stories_EandT_mobile.png');
+        background-position: top;
+        background-repeat:no-repeat;
+        /*background-size: cover;*/
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 50vh;
+        position: relative;
+    }
+
+    #lina-profile-img{
+        background-image: url('images/stories_Lina_mobile.png');
+        background-position: center;
+        background-repeat:no-repeat;
+        /*background-size: cover;*/
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 50vh;
+        position: relative;
+    }
+
+    #ray-profile-img{
+        background-image: url('images/stories_Ray_mobile.png');
+        background-position: center;
+        background-repeat:no-repeat;
+        /*background-size: cover;*/
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 50vh;
+        position: relative;
+    }
+
+
+
+
+
+
 	#EandT-profile-img p, #mikey-profile-img p, #lina-profile-img p, #ray-profile-img p {
     top: 45%;
     left: 10%;
