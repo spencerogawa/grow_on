@@ -820,9 +820,9 @@ header{
 }
 
 .checkout img{
-    width: 2%;
-    height: 2%;
+    width: 50px;
     vertical-align: middle;
+    padding-bottom: 5px;
 }
 .checkout li{
     display: inline-block;
@@ -1056,6 +1056,8 @@ header{
     width: 105px;
     background-position: top;
 }
+
+
 
 
 
