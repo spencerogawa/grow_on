@@ -988,6 +988,7 @@ header{
     background-size: 100%;
     transition: .05s;
     background-position: center;
+    background-repeat:no-repeat;
 }
 
 #online-juice-box-img:hover {
@@ -2393,6 +2394,60 @@ body.open:after {
         width: 230px;
     }
 
+/*----ONLINE SHOP*/
+    #juice-body {
+        padding-bottom: 100px;
+        padding-top: 65px;
+    }
+    .add-cart-btn {
+        width: 100%;
+    }
+    #onlineshop-body h1{
+        font-size: 1.3em;
+    }
+
+    #onlineshop-body p, .price{
+        font-size: 0.9em;
+    }
+    #onlineshop-wrapper {
+        width: 90%;
+    }
+
+    #onlineshop-header {
+        padding-top: 15px;
+        overflow: hidden;
+        border-bottom: 1px solid #c8c8c8;
+        position: fixed;
+        width: 90%;
+        background-color: white;
+    }
+    #online-juice-box-img {
+        width: 110px;
+        height: 200px;
+        background-image: url(./images/onlineshop_box.png);
+        background-size: 112%;
+    }
+
+    .lina-juice-img, .mikey-juice-img, .EandT-juice-img, .ray-juice-img{
+        height: 215px;
+        width: 110px;
+        background-size: 50%;
+        background-position: center;
+    }
+
+    .online-juice-text {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 5px;
+        width: 55%;
+    }
+    .juice-col {
+        width: 100%;
+        display: block;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
 
 
 
@@ -2523,19 +2578,7 @@ body.open:after {
 		width: 100%;
 		display: block;
 	}
-    .juice-col {
-        width: 100%;
-        display: block;
-        padding: 10% 0% 0 0%;
-    }
 
-
-    .add-cart-btn {
-         width: 100%;
-    }
-    #onlineshop-body h1{
-        font-size: 2em;
-    }
 
 
 /*----CS HOME*/
@@ -2615,7 +2658,7 @@ body.open:after {
     }
 
 
-    /*----CS PKG*/
+/*----CS PKG*/
     .img-mobile{
         display: block;
     }
