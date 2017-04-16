@@ -147,13 +147,16 @@ function hasScrolled() {
 
 
 // HOME Scroll Down ///
-var scrollNum = 860;
-if ($( window ).width() < 780) {
-    scrollNum = 500;
-} else if ($( window ).width() < 1024) {
-    scrollNum = 600;
-}
-
+$("#home-scroll-down").click(function() {
+    var scrollNum = 860;
+    if ($( window ).width() < 740) {
+        scrollNum = 500;
+    } else if ($( window ).width() < 1024) {
+        scrollNum = 1300;
+    }
+    $("html, body").animate({ scrollTop: scrollNum }, "slow");
+    return false;
+});
 
 // CASE STUDY Home Scroll Down ///
 $("#cs-home-scroll-down").click(function() {
