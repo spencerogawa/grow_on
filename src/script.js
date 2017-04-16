@@ -26,15 +26,15 @@ $(window).scroll(function(event){
     if ($( window ).width() < 780) {
         if (scrollTop < 400) {
             homeBgColor = "rgba(0, 0, 0, 1.0)";
-        } else if (scrollTop < 800) {
+        } else if (scrollTop < 1750) {
             homeBgColor = "rgba(78, 196, 209, 1.0)";
-        } else if (scrollTop < 1000) {
+        } else if (scrollTop < 4900) {
             homeBgColor = "rgba(255, 255, 255, 1.0)";
-        } else if (scrollTop < 8800) {
+        } else if (scrollTop < 7850) {
             homeBgColor = "rgba(245, 201, 35, 1.0)";
-        } else if (scrollTop < 9700) {
+        } else if (scrollTop < 8175) {
             homeBgColor = "rgba(255, 255, 255, 1.0)";
-        } else if (scrollTop < 13100) {
+        } else if (scrollTop < 10950) {
             homeBgColor = "rgba(243, 114, 88, 1.0)";
         } else {
             homeBgColor = "rgba(255, 255, 255, 1.0)";
