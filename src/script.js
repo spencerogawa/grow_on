@@ -147,14 +147,12 @@ function hasScrolled() {
 
 
 // HOME Scroll Down ///
-$("#home-scroll-down").click(function() {
-    var scrollNum = 860;
-    if ($( window ).width() < 780) {
-        scrollNum = 500;
-    }
-    $("html, body").animate({ scrollTop: scrollNum }, "slow");
-    return false;
-});
+var scrollNum = 860;
+if ($( window ).width() < 780) {
+    scrollNum = 500;
+} else if ($( window ).width() < 1024) {
+    scrollNum = 600;
+}
 
 
 // CASE STUDY Home Scroll Down ///
