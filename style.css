@@ -816,8 +816,9 @@ header {
     margin-left: 9%;
     padding: 1% 5% 1% 5%;
     display: none;
-    overflow: hidden;
+    overflow: scroll;
     opacity: 0;
+    max-height: 80%;
 }
 
 .checkout img {
@@ -2215,7 +2216,7 @@ body.open:after {
 }
 
 #cs-reference-container li{
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding-left: 1em;
     text-indent: -.7em;
 }
