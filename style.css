@@ -1008,6 +1008,7 @@ header {
     height: 400px;
     width: 108px;
     background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -1023,6 +1024,7 @@ header {
     height: 400px;
     width: 108px;
     background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -1038,6 +1040,7 @@ header {
     height: 400px;
     width: 108px;
     background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -1053,6 +1056,7 @@ header {
     height: 400px;
     width: 108px;
     background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -1060,7 +1064,7 @@ header {
     background-image: url('./images/onlineshop-EandT-hover-animation.gif');
     height: 400px;
     width: 108px;
-    background-position: top;
+    background-position: center;
 }
 
 /*-----------------ABOUT------------------*/
