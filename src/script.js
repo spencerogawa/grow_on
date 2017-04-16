@@ -22,8 +22,8 @@ $(window).scroll(function(event){
 
     /*********************** index.html ***********************/
     var homeBgColor;
-    // When width is LESS than 780 px
-    if ($( window ).width() < 780) {
+    // When width is LESS than 767 px MOBILE
+    if ($( window ).width() < 767) {
         if (scrollTop < 400) {
             homeBgColor = "rgba(0, 0, 0, 1.0)";
         } else if (scrollTop < 1750) {
@@ -40,7 +40,27 @@ $(window).scroll(function(event){
             homeBgColor = "rgba(255, 255, 255, 1.0)";
         }
     }
-    // When width is LARGER than 780 px
+
+    // When width is LESS than 1023 px TABLET
+    if ($( window ).width() < 1023) {
+        if (scrollTop < 400) {
+            homeBgColor = "rgba(0, 0, 0, 1.0)";
+        } else if (scrollTop < 2335) {
+            homeBgColor = "rgba(78, 196, 209, 1.0)";
+        } else if (scrollTop < 5675) {
+            homeBgColor = "rgba(255, 255, 255, 1.0)";
+        } else if (scrollTop < 9370) {
+            homeBgColor = "rgba(245, 201, 35, 1.0)";
+        } else if (scrollTop < 9757) {
+            homeBgColor = "rgba(255, 255, 255, 1.0)";
+        } else if (scrollTop < 12600) {
+            homeBgColor = "rgba(243, 114, 88, 1.0)";
+        } else {
+            homeBgColor = "rgba(255, 255, 255, 1.0)";
+        }
+    }
+
+    // When width is LARGER than 1024 px
     else {
         if (scrollTop < 400) {
             homeBgColor = "rgba(0, 0, 0, 1.0)";
