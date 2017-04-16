@@ -22,13 +22,13 @@ function toggleImagesOnlineShop() {
             console.log("entering online-juice-box-img");
             if ($( window ).width() > 768) {
                 $(this)
-                    .css("background-image", "url('./images/onlineshop_box-hover.png'")
+                    .css("background-image", "url('./images/onlineshop_box-hover.png')")
                     .css("height", "400px")
                     .css("width", "400px")
                     .css("background-position", "center")
                     .css("background-size", "70%");
             } else {
-                $(this).css("background-image", "url('./images/onlineshop_box-hover.png'");
+                $(this).css("background-image", "url('./images/onlineshop_box-hover.png')");
             }
         })
         .mouseleave(function() {
@@ -39,7 +39,7 @@ function toggleImagesOnlineShop() {
     $( ".lina-juice-img" )
         .mouseenter(function() {
             console.log("entering lina-juice-img");
-            $( this ).css("background-image", "url('./images/onlineshop-lina-hover-animation.gif'");
+            $( this ).css("background-image", "url('./images/onlineshop-lina-hover-animation.gif')");
         })
         .mouseleave(function() {
             console.log("leaving lina-juice-img");
@@ -49,7 +49,7 @@ function toggleImagesOnlineShop() {
     $( ".ray-juice-img" )
         .mouseenter(function() {
             console.log("entering ray-juice-img");
-            $( this ).css("background-image", "url('./images/onlineshop-ray-hover-animation.gif'");
+            $( this ).css("background-image", "url('./images/onlineshop-ray-hover-animation.gif')");
         })
         .mouseleave(function() {
             console.log("leaving ray-juice-img");
@@ -59,7 +59,7 @@ function toggleImagesOnlineShop() {
     $( ".mikey-juice-img" )
         .mouseenter(function() {
             console.log("entering mikey-juice-img");
-            $( this ).css("background-image", "url('./images/onlineshop-mikey-hover-animation.gif'");
+            $( this ).css("background-image", "url('./images/onlineshop-mikey-hover-animation.gif')");
         })
         .mouseleave(function() {
             console.log("leaving mikey-juice-img");
@@ -69,7 +69,7 @@ function toggleImagesOnlineShop() {
     $( ".EandT-juice-img" )
         .mouseenter(function() {
             console.log("entering EandT-juice-img");
-            $( this ).css("background-image", "url('./images/onlineshop-EandT-hover-animation.gif'");
+            $( this ).css("background-image", "url('./images/onlineshop-EandT-hover-animation.gif')");
         })
         .mouseleave(function() {
             console.log("leaving EandT-juice-img");
