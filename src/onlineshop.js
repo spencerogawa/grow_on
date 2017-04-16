@@ -20,16 +20,10 @@ function toggleImagesOnlineShop() {
     $( "#online-juice-box-img" )
         .mouseenter(function() {
             console.log("entering online-juice-box-img");
-            if ($( window ).width() > 768) {
-                $(this)
-                    .css("background-image", "url('./images/onlineshop_box-hover.png')")
-                    .css("height", "400px")
-                    .css("width", "400px")
-                    .css("background-position", "center")
-                    .css("background-size", "70%");
-            } else {
-                $(this).css("background-image", "url('./images/onlineshop_box-hover.png')");
-            }
+            $(this)
+                .css("background-image", "url('./images/onlineshop_box-hover.png')")
+                .css("background-position", "center")
+                .css("background-size", "70%");
         })
         .mouseleave(function() {
             console.log("leaving online-juice-box-img");
