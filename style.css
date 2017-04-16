@@ -58,8 +58,8 @@
 
 
 
-@media only screen
-and (min-width : 1025px) {
+/*@media only screen*/
+/*and (min-width : 1025px) {*/
 
     * {
         box-sizing: border-box;
@@ -2200,7 +2200,7 @@ and (min-width : 1025px) {
         padding: 10px;
         width: 80%;
     }
-}
+
 
 /*------------------------------------Tablet View-------------------------------------------*/
 
