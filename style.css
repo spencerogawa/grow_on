@@ -995,27 +995,12 @@ header {
     background-repeat: no-repeat;
 }
 
-#online-juice-box-img:hover {
-    background-image: url('./images/onlineshop_box-hover.png');
-    height: 400px;
-    width: 400px;
-    background-position: center;
-    background-size: 70%;
-}
-
 .lina-juice-img {
     background-image: url('./images/onlineshop-Lina-front.png');
     height: 400px;
     width: 108px;
     background-size: 100%;
     background-repeat: no-repeat;
-}
-
-.lina-juice-img:hover {
-    background-image: url('./images/onlineshop-lina-hover-animation.gif');
-    height: 400px;
-    width: 108px;
-    background-position: center;
 }
 
 .ray-juice-img {
@@ -1026,13 +1011,6 @@ header {
     background-repeat: no-repeat;
 }
 
-.ray-juice-img:hover {
-    background-image: url('./images/onlineshop-ray-hover-animation.gif');
-    height: 400px;
-    width: 108px;
-    background-position: center;
-}
-
 .mikey-juice-img {
     background-image: url('./images/onlineshop-mikey-front.png');
     height: 400px;
@@ -1041,26 +1019,12 @@ header {
     background-repeat: no-repeat;
 }
 
-.mikey-juice-img:hover {
-    background-image: url('./images/onlineshop-mikey-hover-animation.gif');
-    height: 400px;
-    width: 108px;
-    background-position: center;
-}
-
 .EandT-juice-img {
     background-image: url('./images/onlineshop-EandT-front.png');
     height: 400px;
     width: 108px;
     background-size: 100%;
     background-repeat: no-repeat;
-}
-
-.EandT-juice-img:hover {
-    background-image: url('./images/onlineshop-EandT-hover-animation.gif');
-    height: 400px;
-    width: 108px;
-    background-position: top;
 }
 
 /*-----------------ABOUT------------------*/
