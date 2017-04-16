@@ -1006,7 +1006,7 @@ header {
 .lina-juice-img {
     background-image: url('./images/onlineshop-Lina-front.png');
     height: 400px;
-    width: 115px;
+    width: 108px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -1021,7 +1021,7 @@ header {
 .ray-juice-img {
     background-image: url('./images/onlineshop-Ray-front.png');
     height: 400px;
-    width: 115px;
+    width: 108px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -1036,7 +1036,7 @@ header {
 .mikey-juice-img {
     background-image: url('./images/onlineshop-mikey-front.png');
     height: 400px;
-    width: 115px;
+    width: 108px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -1051,7 +1051,7 @@ header {
 .EandT-juice-img {
     background-image: url('./images/onlineshop-EandT-front.png');
     height: 400px;
-    width: 115px;
+    width: 108px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -1059,7 +1059,7 @@ header {
 .EandT-juice-img:hover {
     background-image: url('./images/onlineshop-EandT-hover-animation.gif');
     height: 400px;
-    width: 105px;
+    width: 108px;
     background-position: top;
 }
 
