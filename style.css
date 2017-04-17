@@ -1454,13 +1454,20 @@ header {
     margin-top: 70px;
 }
 
+.cs-section07 .cs-col2 {
+    width: 45%;
+    margin: auto;
+}
 
+.cs-section7-img{
+    width:80%;
+    margin: auto;
+    text-align: center;
+}
 
 .cs-col2 {
-    /*width: 40%;*/
     margin: 0;
     padding: 0;
-    /*display: inline-block;*/
 }
 
 .cs-col3 {
@@ -2810,6 +2817,7 @@ body.open:after {
 
     .cs-col1 {
         width: 100%;
+        margin: auto;
     }
 
     .cs-col1 img {
@@ -2817,6 +2825,7 @@ body.open:after {
         margin-bottom: 20px;
         width: 110%;
     }
+
 
     .cs-col2 {
         width: 100%;
