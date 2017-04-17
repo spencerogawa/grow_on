@@ -180,6 +180,12 @@ $("#home-scroll-down").click(function() {
 
 // CASE STUDY Home Scroll Down ///
 $("#cs-home-scroll-down").click(function() {
+    var scrollNum = 860;
+    if ($( window ).width() < 740) {
+        scrollNum = 500;
+    } else if ($( window ).width() < 1024) {
+        scrollNum = 1375;
+    }
     $("html, body").animate({ scrollTop: 860 }, "slow");
     return false;
 });
