@@ -1300,7 +1300,7 @@ header {
 }
 
 #cs-header {
-    background-image: url('images/cs-top-bg copy.png');
+    background-image: url('images/cs-top-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1310,8 +1310,8 @@ header {
     margin: auto;
     color: white;
     text-align: center;
-    padding-top: 35vh;
-    padding-bottom: 5vh;
+    padding-top: 25vh;
+    padding-bottom: 13vh;
 }
 
 #cs-header-title p {
