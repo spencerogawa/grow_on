@@ -186,7 +186,7 @@ $("#cs-home-scroll-down").click(function() {
     } else if ($( window ).width() < 1024) {
         scrollNum = 1375;
     }
-    $("html, body").animate({ scrollTop: 860 }, "slow");
+    $("html, body").animate({ scrollTop: scrollNum }, "slow");
     return false;
 });
 
