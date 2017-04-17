@@ -2258,6 +2258,12 @@ body.open:after {
         padding-bottom: 30px;
     }
 
+/*--CASE STUDY*/
+    #cs-header-title {
+        padding-top: 40vh;
+        padding-bottom: 20vh;
+    }
+
 }
 
 
