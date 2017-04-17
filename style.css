@@ -2307,7 +2307,7 @@ body.open:after {
 		padding-top: 10vh;
 	}
 
-/*--NAV*/
+/*--NAV--M*/
 	nav img{
 		padding-top: 0px;
     	padding-bottom: 7px;
@@ -2320,7 +2320,7 @@ body.open:after {
 	.mobile-nav{
 		display: inline;
 	}
-/*--FOOTER*/
+/*--FOOTER--M*/
 	footer p {
     margin: 0 0 5px 0;
     font-size: 0.5em;
@@ -2335,7 +2335,7 @@ body.open:after {
 	}
 
 
-/*--MAIN*/
+/*--MAIN--M*/
     .main-container{
         width: 85%;
     }
@@ -2434,7 +2434,7 @@ body.open:after {
         margin-bottom: 90px;
     }
 
-/*--STORIES*/
+/*--STORIES--M*/
 #stories-top-image img {
     width: 100vw;
 	}
@@ -2545,7 +2545,7 @@ body.open:after {
     }
 
 
-/*----BECOME GROWON THANKS*/
+/*----BECOME GROWON THANKS--M*/
     #contact-success-icon {
         text-align: center;
         margin-top: 16vh;
@@ -2560,7 +2560,7 @@ body.open:after {
         margin-bottom: 20px;
     }
 
-/*----ONLINE SHOP*/
+/*----ONLINE SHOP---M*/
     #juice-body {
         padding-bottom: 100px;
         padding-top: 75px;
@@ -2630,7 +2630,7 @@ body.open:after {
 
 
 
-/*--ABOUT*/
+/*--ABOUT-----M*/
 	#about-body h1, #about-body p {
     text-align: left; 
 	}
@@ -2644,7 +2644,7 @@ body.open:after {
     .contact-form {
         width: 100%;
     }
-/*--APP------------------------*/
+/*--APP-----M*/
 	#app_header {
     background-image: url(images/app_top_mobile.png);
     background-position: center;
@@ -2760,9 +2760,14 @@ body.open:after {
 
 
 
-/*----CS HOME*/
+/*----CS HOME---M*/
     #cs-header-title img{
         width: 70%;
+    }
+
+    #cs-header-title {
+        padding-top: 46vh;
+        padding-bottom: 1vh;
     }
 
     #cs-header{
@@ -2781,7 +2786,11 @@ body.open:after {
 
     #cs-main-container h1 {
         word-spacing: 10px;
-        font-size: 12em;
+        font-size: 8em;
+    }
+
+    .cs-section02 {
+         width: 100%;
     }
 
     .cs-section01 {
@@ -2813,8 +2822,6 @@ body.open:after {
         width: 90%;
     }
 
-
-
     .cs-col1 {
         width: 100%;
         margin: auto;
@@ -2836,7 +2843,77 @@ body.open:after {
         font-size: 2em;
         letter-spacing: 4px;
         padding-left: 7%;
+        padding-right: 7%;
     }
+
+    .cs-col2 h1 {
+        margin-bottom: -100px;
+        margin-top: 5px;
+    }
+
+    .cs-section03 {
+        z-index: 1;
+         margin-top: 0;
+    }
+
+    .cs-persona01{
+        padding-top: 60px;
+    }
+
+    .persona-info01, .persona-info02, .persona-info03 {
+        width: 85%;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .cs-persona-wrapper p{
+        width: 100%;
+    }
+
+    .cs-section04 {
+        background-image: none;
+        background-size: 50%;
+         margin-top: 0;
+         /*margin-right: -50px; */
+    }
+
+    .cs-section05 {
+        width: 85%;
+        margin: auto;
+    }
+    .cs-section06 {
+        margin-top: 0;
+    }
+
+    .cs-section07 .cs-col2 {
+        width: 85%;
+        margin: auto;
+    }
+
+    .cs-section08-w60 {
+        width: 85vw;
+        margin: auto;
+    }
+
+    .cs-section08-w60 div {
+         width: 100%;
+    }
+
+    .cs-naming {
+        background-image: none;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #cs-home-key-messages {
+        width: 80%;
+    }
+
+
+
+
+
 
 
 /*----CS PKG*/
