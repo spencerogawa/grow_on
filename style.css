@@ -1328,6 +1328,11 @@ header {
     cursor: pointer;
 }
 
+.cs-section02{
+    width: 70%;
+    margin: auto;
+}
+
 #cs-main-container h2 {
     display: inline-block;
     font-family: 'bebasregular', serif;
@@ -1344,7 +1349,7 @@ header {
     color: rgba(224, 225, 225, 0.58);
 }
 
-#cs-main-container p {
+.cs-section03 p, .cs-section01 p, .cs-section04 p, .cs-section06 p  {
     width: 300px;
     display: inline-block;
     line-height: 20px;
@@ -1389,6 +1394,12 @@ header {
     vertical-align: top;
 }
 
+.cs-section05 {
+    width: 70%;
+    margin:auto;
+}
+
+
 .cs-section05 h1, .cs-section07 h1 {
     /*	margin-left: 70%;*/
     margin-bottom: -100px;
@@ -1400,12 +1411,21 @@ header {
     vertical-align: top;
 }
 
-.cs-section05 p, .cs-section07 p {
+.cs-section07 p {
     list-style-type: decimal-leading-zero;
     width: 400px;
     /*	margin-left: 60%;*/
     line-height: 20px;
     color: #767575;
+}
+
+
+.cs-section05 p {
+    /*display: inline-block;*/
+    line-height: 20px;
+    color: #767575;
+    font-size: 1em;
+    letter-spacing: 1.5px;
 }
 
 .cs-section03 {
@@ -1431,29 +1451,16 @@ header {
 }
 
 #cs-section05-img {
-    width: 120%;
-    margin-left: -300px;
-    margin-bottom: 0;
+    margin-top: 70px;
 }
 
-.cs-col1 {
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    padding-left: 50px;
-}
 
-.cs-col1 img {
-    margin-top: 60px;
-    margin-bottom: -30px;
-}
 
 .cs-col2 {
-    width: 40%;
+    /*width: 40%;*/
     margin: 0;
     padding: 0;
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 .cs-col3 {
@@ -1483,12 +1490,12 @@ header {
 }
 
 .cs-col2 ul {
-    list-style-type: decimal-leading-zero;
-    /*width: 400px;*/
     line-height: 20px;
     color: #767575;
     font-size: 0.9em;
+    width: 80%;
     letter-spacing: 1.5px;
+    margin: auto;
 }
 
 #cs-persona-title {
@@ -1534,71 +1541,78 @@ header {
     line-height: 20px;
 }
 
-.cs-persona01 {
-    background-image: url('images/persona01_150dpi.png');
-    background-repeat: no-repeat;
-    height: 700px;
-    position: relative;
-    overflow: hidden;
-    background-size: 100%;
+.persona-info01,.persona-info02, .persona-info03 {
+    width:70%;
+    margin:auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+
 }
 
-.persona-info01 {
-    max-width: 35%;
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    position: absolute;
-    right: 0;
-    margin-top: 50px;
-    border-top: 3px solid #F5C823;
+.cs-persona-wrapper p{
+    line-height: 20px;
+    color: #767575;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+}
 }
 
-.cs-persona02 {
-    background-image: url('images/persona02.png');
-    background-repeat: no-repeat;
-    height: 700px;
-    position: relative;
-    overflow: hidden;
-    background-size: 100%;
-}
+/*.persona-info01 {*/
+    /*max-width: 35%;*/
+    /*display: inline-block;*/
+    /*background-color: rgba(255, 255, 255, 0.85);*/
+    /*padding: 20px;*/
+    /*padding-left: 30px;*/
+    /*padding-bottom: 30px;*/
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*margin-top: 50px;*/
+    /*border-top: 3px solid #F5C823;*/
+/*}*/
 
-.persona-info02 {
-    max-width: 35%;
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    position: absolute;
-    right: 0;
-    margin-top: 50px;
-    border-top: 3px solid #F5C823;
-}
+/*.cs-persona02 {*/
+    /*background-image: url('images/persona02.png');*/
+    /*background-repeat: no-repeat;*/
+    /*height: 700px;*/
+    /*position: relative;*/
+    /*overflow: hidden;*/
+    /*background-size: 100%;*/
+/*}*/
 
-.cs-persona03 {
-    background-image: url('images/persona03.png');
-    background-repeat: no-repeat;
-    height: 700px;
-    position: relative;
-    overflow: hidden;
-    background-size: 100%;
-}
+/*.persona-info02 {*/
+    /*max-width: 35%;*/
+    /*display: inline-block;*/
+    /*background-color: rgba(255, 255, 255, 0.85);*/
+    /*padding: 20px;*/
+    /*padding-left: 30px;*/
+    /*padding-bottom: 30px;*/
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*margin-top: 50px;*/
+    /*border-top: 3px solid #F5C823;*/
+/*}*/
 
-.persona-info03 {
-    max-width: 35%;
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    position: absolute;
-    left: 0;
-    margin-top: 50px;
-    border-top: 3px solid #F5C823;
-}
+/*.cs-persona03 {*/
+    /*background-image: url('images/persona03.png');*/
+    /*background-repeat: no-repeat;*/
+    /*height: 700px;*/
+    /*position: relative;*/
+    /*overflow: hidden;*/
+    /*background-size: 100%;*/
+/*}*/
+
+/*.persona-info03 {*/
+    /*max-width: 35%;*/
+    /*display: inline-block;*/
+    /*background-color: rgba(255, 255, 255, 0.85);*/
+    /*padding: 20px;*/
+    /*padding-left: 30px;*/
+    /*padding-bottom: 30px;*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*margin-top: 50px;*/
+    /*border-top: 3px solid #F5C823;*/
+/*}*/
 
 .casestudy-bottom ul {
     list-style: none;
