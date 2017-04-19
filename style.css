@@ -1852,6 +1852,61 @@ header {
     margin: auto;
 }
 
+
+
+
+
+
+
+/*-----------SPECIAL THANKS---------------*/
+#specialthanks-main-container{
+    width: 60%;
+    margin:auto;
+    margin-top: 70px;
+}
+
+#specialthanks-main-container h1{
+    color: #d9d9d9;
+    word-spacing: 0.2em;
+    font-size: 3.5em;
+    letter-spacing: 0.1em;
+}
+
+#specialthanks-main-container h2{
+    letter-spacing: 1px;
+    color: #555555;
+    margin-bottom: 0;
+    font-size: 1.1em;
+}
+
+#specialthanks-main-container p{
+    margin-top: 0;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+#specialthanks-main-container li{
+    list-style: none;
+    color: #555555;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.specialthanks-title{
+    font-weight: 400;
+}
+
+.specialthanks-role{
+    font-weight: 200;
+}
+
+#specialthanks-main-container ul{
+    margin-top: 0;
+}
+
+
+
+
 /*-----------FOOTER---------------*/
 footer {
     font-size: 0.8em;
