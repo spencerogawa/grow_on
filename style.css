@@ -1883,6 +1883,7 @@ header {
     margin-top: 0;
     font-size: 1em;
     margin-bottom: 0;
+    width: 60%;
 }
 
 #specialthanks-main-container li{
@@ -3001,6 +3002,34 @@ body.open:after {
     }
     #cs-pkg-4bottles {
         margin-top: 60px;
+    }
+/*----SPECIAL THANKS --M*/
+    #specialthanks-main-container {
+        width: 90%;
+        margin-top: 70px;
+    }
+
+    #specialthanks-main-container h1 {
+        color: #d9d9d9;
+        word-spacing: 0.2em;
+        font-size: 2.5em;
+        letter-spacing: 0.1em;
+        margin-top: 0;
+    }
+
+    #specialthanks-main-container div{
+        /*width: 90%;*/
+    }
+
+    #specialthanks-main-container p {
+        margin-top: 0;
+        font-size: 0.9em;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    #specialthanks-main-container ul {
+        font-size: 0.9em;
     }
 
 }
