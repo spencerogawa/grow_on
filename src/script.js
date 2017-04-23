@@ -182,7 +182,7 @@ $("#home-scroll-down").click(function() {
 $("#cs-home-scroll-down").click(function() {
     var scrollNum = 860;
     if ($( window ).width() < 740) {
-        scrollNum = 960;
+        scrollNum = 830;
     } else if ($( window ).width() < 1024) {
         scrollNum = 1375;
     }
