@@ -2,7 +2,7 @@
  *
  * Mouse enter, then toggle images
  *
-**/
+ **/
 function toggleImagesOnlineShop() {
 
     // Preload Images

@@ -1,3 +1,14 @@
+//santi
+function update_count_width($count){
+    var c = parseInt($count.html());
+    if(c > 9) $count.css("width", "2.1em");
+    else $count.css("width", "1.6em");
+}
+function get_item_style(title){
+    if(title == "GROWON CPJ premium box") return "width:100%;";
+    else return "";
+}
+
 // Hide Nav on on scroll down
 var didScroll;
 var lastScrollTop = 0;
@@ -12,11 +23,11 @@ $(window).scroll(function(event){
     $("#home-header").css("opacity", 1 - scrollTop / 400);
 
     if (scrollTop > 200){
-    $("#cs-header").css("opacity", 1 - ((scrollTop - 200) / 350));
+        $("#cs-header").css("opacity", 1 - ((scrollTop - 200) / 350));
     }
 
     if (scrollTop > 7500){
-    $("#fade-out02").css("opacity", 1 - ((scrollTop - 7500) / 7600));
+        $("#fade-out02").css("opacity", 1 - ((scrollTop - 7500) / 7600));
     }
 
 
@@ -145,11 +156,11 @@ setInterval(function() {
 
 function hasScrolled() {
     var st = $(this).scrollTop();
-    
+
     // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
-    
+
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
@@ -161,7 +172,7 @@ function hasScrolled() {
             $('nav').removeClass('nav-up').removeClass('nav-hide').removeClass('nav-no-bg').addClass('nav-down');
         }
     }
-    
+
     lastScrollTop = st;
 }
 
@@ -225,7 +236,9 @@ $('.add-cart').click(function(){
 
 
     $('.thumTotalPrice').text(totalPrice.toFixed(2));
-    $(this).parent().find('.count').text(currentCount);
+    var $count = $(this).parent().find('.count');
+    $count.text(currentCount);
+    update_count_width($count);
     $(this).parent().parent().addClass('itemClicked');
 
 
@@ -233,11 +246,21 @@ $('.add-cart').click(function(){
 
     if (currentCount > 1) {
         $('.checkout ul').find('.'+find).remove();
-        $('.checkout ul').prepend('<li class ="'+find+'"><img class="thumImage" src="'+imagePlace+'" alt="place holder image"><p class="thumTitle">'+title+'</p><div class="thumSummary">$<span class="thumPrice">'+price.toFixed(2)+'</span> x<span class="thumCount">'+currentCount+'</span></div></li>');
-
-    }else{
-        $('.checkout ul').prepend('<li class ="'+find+'"><img class="thumImage" src="'+imagePlace+'" alt="place holder image"><p class="thumTitle">'+title+'</p><div class="thumSummary">$<span class="thumPrice">'+price.toFixed(2)+'</span> x<span class="thumCount">'+currentCount+'</span></div></li>');
     }
+
+    $('.checkout ul').prepend(
+        '<li class ="'+find+'">\
+            <div style="width:20%;max-width:100px;display:inline-block;text-align:center;">\
+                <img style="max-height:190px;' + get_item_style(title) + '" class="thumImage" src="'+imagePlace+'" alt="place holder image">\
+            </div>\
+            <div style="width:75%;display:inline-block;">\
+                <p class="thumTitle">'+title+'</p>\
+                <div class="thumSummary">\
+                    $<span class="thumPrice">'+price.toFixed(2)+'</span> x<span class="thumCount">'+currentCount+'</span>\
+                </div>\
+            </div>\
+        </li>');
+
     if (totalPrice >0){
         $(".empty").hide();
     }else{}
@@ -252,7 +275,7 @@ $('.min-cart').click(function(){
     var price = parseFloat($(this).parent().parent().find(".price span").text());
     var title = $(this).parent().parent().find('.onlineshop-juice-name').text();
     var find = title.replace(/\s/g, '').replace(/&/g, '');
-    $(this).parent().parent().parent().find('img').attr('src');
+    var imagePlace = $(this).parent().parent().parent().find('img').attr('src');
     var totalItemNumber = parseInt($('.totalItemNumber').text());
 
 
@@ -263,7 +286,9 @@ $('.min-cart').click(function(){
         totalItemNumber = totalItemNumber -1;
         $('.total span').text(totalPrice.toFixed(2));
         $(".thumTotalPrice").text(totalPrice.toFixed(2))
-        $(this).parent().find('.count').text(currentCount);
+        var $count = $(this).parent().find('.count');
+        $count.text(currentCount);
+        update_count_width($count);
         $('.checkout ul').find('.'+find).remove();
         $('.totalItemNumber').text(totalItemNumber);
         $(this).parent().parent().removeClass('itemClicked');
@@ -275,9 +300,22 @@ $('.min-cart').click(function(){
         $('.totalItemNumber').text(totalItemNumber);
         $('.total span').text(totalPrice.toFixed(2));
         $(".thumTotalPrice").text(totalPrice.toFixed(2))
-        $(this).parent().find('.count').text(currentCount);
+        var $count = $(this).parent().find('.count');
+        $count.text(currentCount);
+        update_count_width($count);
         $('.checkout ul').find('.'+find).remove();
-        $('.checkout ul').prepend('<li class ="'+find+'"><img class="thumImage" src="'+imagePlace+'" alt="place holder image"><p class="thumTitle">'+title+'</p><div >$<span class="thumPrice">'+price.toFixed(2)+'</span> x(<span class="thumCount">'+currentCount+'</span>)</div></li>');
+        $('.checkout ul').prepend(
+            '<li class ="'+find+'">\
+                <div style="width:20%;max-width:100px;display:inline-block;text-align:center;">\
+                    <img style="max-height:190px;' + get_item_style(title) + '" class="thumImage" src="'+imagePlace+'" alt="place holder image">\
+                </div>\
+                <div style="width:75%;display:inline-block;">\
+                    <p class="thumTitle">'+title+'</p>\
+                    <div class="thumSummary">\
+                        $<span class="thumPrice">'+price.toFixed(2)+'</span> x<span class="thumCount">'+currentCount+'</span>\
+                    </div>\
+                </div>\
+            </li>');
     }else{}
 
     if (totalPrice ==0){
@@ -373,16 +411,16 @@ $('#onlineshop-div').click(function(){
 'use strict';
 
 (function() {
-  var body = document.body;
-  var burgerMenu = document.getElementsByClassName('b-menu')[0];
-  var burgerContain = document.getElementsByClassName('b-container')[0];
-  var burgerNav = document.getElementsByClassName('b-nav')[0];
+    var body = document.body;
+    var burgerMenu = document.getElementsByClassName('b-menu')[0];
+    var burgerContain = document.getElementsByClassName('b-container')[0];
+    var burgerNav = document.getElementsByClassName('b-nav')[0];
 
-  burgerMenu.addEventListener('click', function toggleClasses() {
-    [body, burgerContain, burgerNav].forEach(function (el) {
-      el.classList.toggle('open');
-    });
-  }, false);
+    burgerMenu.addEventListener('click', function toggleClasses() {
+        [body, burgerContain, burgerNav].forEach(function (el) {
+            el.classList.toggle('open');
+        });
+    }, false);
 })();
 
 
@@ -390,6 +428,6 @@ $('#onlineshop-div').click(function(){
 
 /* Scroll up to top page */
 $("#scroll-to-top").click(function() {
-  $("html, body").animate({ scrollTop: 0 }, "slow");
-  return false;
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
 });
